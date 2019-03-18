@@ -1,0 +1,31 @@
+1. INSTALL DRONEKIT (ONLY ON PYTHON 2.7 VERSION)
+	SUDO PIP INSTALL DRONEKIT
+2. INSTALL SITL
+	SUDO PIP INSTALL DRONEKIT-SITL
+3. IF PIP IS NOT PRESENT, 
+	SUDO EASY_INSTALL PIP
+
+
+Companion Computers
+
+RASPBERRY PI
+http://python.dronekit.io/develop/companion-computers.html
+
+
+Setting up a Simulated Vehicle (SITL)
+
+Installation
+pip install dronekit-sitl -UI
+
+Running SITL
+dronekit-sitl copter
+
+
+
+
+http://ardupilot.org/planner/docs/common-planning-a-mission-with-waypoints-and-events.html
+
+http://ardupilot.org/dev/docs/learning-the-ardupilot-codebase.html
+http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html
+https://mavlink.io/en/about/implementations.html
+https://docs.px4.io/en/

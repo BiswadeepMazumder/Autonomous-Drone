@@ -1,0 +1,51 @@
+SET_POSITION_TARGET_GLOBAL_INT ( #86 )
+Sets a desired vehicle position, velocity, and/or acceleration in a global coordinate system (WGS84).
+Used by an external controller to command the vehicle (manual controller or other system).
+
+POSITION_TARGET_GLOBAL_INT ( #87 )
+Reports the current commanded vehicle position, velocity, and acceleration as specified by the autopilot.
+This should match the commands sent in SET_POSITION_TARGET_GLOBAL_INT if the vehicle is being controlled this way.
+
+
+Microservices
+The MAVLink "microservices" define higher-level protocols that MAVLink systems can adopt in order to better inter-operate. For example, QGroundControl, ArduPilot and PX4 autopilots all share a common Command Protocol for sending point-to-point messages that require an acknowledgment.
+
+The microservices are used to exchange many types of data, including: parameters, missions, trajectories, images, other files. If the data can be far larger than can be fit into a single message, services will define how the data is split and re-assembled, and how to ensure that any lost data is re-transmitted. Other services provide command acknowledgment and/or error reporting.
+
+Most services use the client-server pattern, such that the GCS (client) initiates a request and the vehicle (server) responds with data.
+
+The main microservices are shown in the sidebar (most are listed below):
+
+-Heartbeat/Connection Protocol
+-Mission Protocol
+
+(https://mavlink.io/en/services/mission.html)
+Upload a Mission to the Vehicle
+The diagram below shows the communication sequence to upload a mission to a drone (assuming all operations succeed).
+
+GCS
+Drone
+MISSION_COUNT
+Start timeout
+MISSION_REQUEST_INT (1)
+Start timeout
+MISSION_ITEM_INT (1)
+MISSION_REQUEST_INT (2)
+Start timeout
+MISSION_ITEM_INT (2)
+MISSION_ACK
+GCS
+Drone
+
+
+-Parameter Protocol
+-Command Protocol
+Camera Protocol
+Camera Definition
+Gimbal Protocol
+Arm Authorization Protocol
+Image Transmission Protocol
+File Transfer Protocol (FTP)
+-Landing Target Protocol
+Ping Protocol
+Path Planning Protocol (Trajectory Interface)
