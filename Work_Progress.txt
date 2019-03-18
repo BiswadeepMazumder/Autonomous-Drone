@@ -29,6 +29,7 @@ http://ardupilot.org/dev/docs/learning-the-ardupilot-codebase.html
 http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html
 https://mavlink.io/en/about/implementations.html
 https://docs.px4.io/en/
+http://dev.ardupilot.com/wiki/copter-commands-in-guided-mode/
 
 
 examples, developing and guide are the three important pages to develop the drone
