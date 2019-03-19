@@ -22,6 +22,18 @@ dronekit-sitl copter
 
 
 
+in two different terminals
+dronekit-sitl copter --home=17.449099,78.383533,0,180
+
+mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14551 --out udp:10.55.222.120.14550
+
+
+
+install mission planner
+
+
+
+
 
 http://ardupilot.org/planner/docs/common-planning-a-mission-with-waypoints-and-events.html
 
