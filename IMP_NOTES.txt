@@ -1,3 +1,14 @@
 1. The second parameter (wait_ready) is used to determine whether connect() returns immediately on connection or
 	if it waits until some vehicle parameters and attributes are populated. 
 	In most cases you should use wait_ready=True to wait on the default set of parameters.
+2. netstat -tulnap shows all the ports in use
+	sudo fuser -k portnumber/tcp   OR  #$USER 80/tcp frees the ports
+3. LocationGlobalRelative(lat,lon,alt)
+
+4. Simple_goto(location, airspeed=None, groundspeed=None)
+   Go to a specified global location (LocationGlobal or LocationGlobalRelative).
+   Parameters:	
+	location – The target location (LocationGlobal or LocationGlobalRelative).
+	airspeed – Target airspeed in m/s (optional).
+	groundspeed – Target groundspeed in m/s (optional).
+	simple_takeoff(alt=None)

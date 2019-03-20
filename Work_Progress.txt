@@ -30,7 +30,10 @@ mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14551 --out udp:10.5
 
 
 install mission planner
-
+1. http://ardupilot.org/planner/docs/mission-planner-overview.html
+2. mission planner advanced installation
+3. (here)-hyperlink
+4. 
 
 
 
